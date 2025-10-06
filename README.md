@@ -1,2 +1,2 @@
-# personal-portfolio-repo
+# personal-portfolio
 Repository for my personal portfolio website
