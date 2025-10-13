@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP v5 CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- CUSTOMIZE CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/dashboard/app.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR FOR DEVICE WIITH SMALLER SCREENS -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary body-nav bg-nav-primary dash-nav">
+        <div class="container-fluid">
+            <!-- NAV BRAND -->
+            <a class="navbar-brand brand" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">MyPortfolio</a>
+            <!-- COLLAPSE TOGGLE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAV LINKS -->
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#home" active>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="auths/login.html">Login</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <!-- SIDEBAR TOGGLE FOR DEVICE WITH BIGGER SCREENS -->
+    <div class="sidebar-body" id="sidebarContent">
+        <div class="ms-2 me-5 mt-3 mb-3 pt-3 pb-3 text-center">
+            <a class="navbar-brand sidebar-brand pt-3 pb-3" href="index.html">MyPortfolio</a>
+        </div>        
+        <div class="nav-divider"></div>  
+        <div class="ms-4 me-5 mt-3 mb-3 pt-3 pb-3">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6 active" aria-current="page" href="index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6" href="home/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6" href="#">About Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-divider"></div>  
+    </div>
+    <div class="container dash-container">
+        <!-- HOME CONTENT -->
+        <div class="row mb-3">
+            <div class="col-md-11 col-sm-12 mx-auto pt-5">
+                <h3 class="content-title">Home Content</h3>  
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2 col-sm-12 mx-auto p-3">
+                    Introduction:
+                </div>
+                <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+                    <span>
+                        Hi!
+                    </span>
+                    <span>I'm <span class="content-info">Dianne</span> and welcome to my Personal Portfolio
+                    </span>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-12 mx-auto p-3">
+                        Body:
+                    </div>
+                    <div class="col-md-7 col-sm-12 mx-auto p-3">
+                        <img class="img-profile" src="/personal-portfolio/public/assets/img/sprite.jpeg">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-12 mx-auto p-3">
+                        Footnote:
+                    </div>
+                    <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+                        This portfolio is hosted by Github Pages
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END HOME CONTENT -->
+        <!-- ABOUT ME CONTENT -->
+        <div class="row">
+            <div class="col-md-11 col-sm-12 mx-auto pt-5">
+                <h3 class="content-title">About Me Content</h3>  
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2 col-sm-12 mx-auto p-3">
+                    Introduction:
+                </div>
+                <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+                    
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2 col-sm-12 mx-auto p-3">
+                    Body:
+                </div>
+                <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">                    
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 mx-auto p-3">
+                                <!-- PERSONAL INFORMATION -->
+                                <h4 class="mb-1 text-center dash-info">Personal Information</h4>
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control mb-2" id="name" name="name" value="Dianne Russel Ocampo" readonly>
+                                <label for="nick_name" class="form-label">Nickname</label>
+                                <input type="text" class="form-control mb-2" id="nick_name" name="nick_name" value="Dianne" readonly>
+                                <!-- EDUCATIONAL BACKGROUND -->
+                                <h4 class="mb-1 mt-3 text-center dash-info">Educational Background</h4>
+                                <label for="school" class="form-label">School</label>
+                                <input type="text" class="form-control mb-2" id="school" name="school" value="Ateneo de Naga University" readonly>
+                                <label for="course" class="form-label">Course</label>
+                                <input type="text" class="form-control mb-2" id="course" name="course" value="Bachelor of Science in Informaion Technology" readonly>
+                                <!-- WORK EXPERIENCE -->
+                                <h4 class="mb-1 mt-3 text-center">Work Experience(s)</h4>
+                                <!-- SA AdNU LIB -->
+                                <div class="col-md-12 col-sm-12 p-3">
+                                    <!-- ROLE -->
+                                    <label for="role" class="form-label">Role</label>
+                                    <input type="text" class="form-control mb-2" id="role" name="role" value="Student Assistant" readonly>
+                                    <!-- WORK PLACE -->
+                                    <label for="work_place" class="form-label">Place of Work</label>
+                                    <textarea class="form-control mb-2" id="work_place" name="work_place" readonly>James J. O'Brien, S.J. University Library</textarea>
+                                    <!-- DURATION -->
+                                    <label for="duration" class="form-label">Duration</label>
+                                    <input type="text" class="form-control mb-2" id="duration" name="duration" value="Start - Finish" readonly>
+                                </div>
+                                <!-- SA SHS LIB -->
+                                <div class="col-md-12 col-sm-12 p-3">
+                                    <!-- ROLE -->
+                                    <label for="role" class="form-label">Role</label>
+                                    <input type="text" class="form-control mb-2" id="role" name="role" value="Student Assistant" readonly>
+                                    <!-- WORK PLACE -->
+                                    <label for="work_place" class="form-label">Place of Work</label>
+                                    <textarea class="form-control mb-2" id="work_place" name="work_place" readonly>Ateneo de Naga University Senior High School Library</textarea>
+                                    <!-- DURATION -->
+                                    <label for="duration" class="form-label">Duration</label>
+                                    <input type="text" class="form-control mb-2" id="duration" name="duration" value="Start - Finish" readonly> 
+                                </div>
+                                <!-- INTERNSHIP -->
+                                <div class="col-md-12 col-sm-12 p-3">
+                                    <!-- ROLE -->
+                                    <label for="role" class="form-label">Role</label>
+                                    <input type="text" class="form-control mb-2" id="role" name="role" value="Web Developer" readonly>
+                                    <!-- WORK PLACE -->
+                                    <label for="work_place" class="form-label">Place of Work</label>
+                                    <textarea class="form-control mb-2" id="work_place" name="work_place" readonly>SDW Web Solutions</textarea>
+                                    <!-- DURATION -->
+                                    <label for="duration" class="form-label">Duration</label>
+                                    <input type="text" class="form-control mb-2" id="duration" name="duration" value="Start - Finish" readonly> 
+                                </div>                                
+                                <!-- WORK -->
+                                <div class="col-md-12 col-sm-12 p-3">
+                                    <!-- ROLE -->
+                                    <label for="role" class="form-label">Role</label>
+                                    <input type="text" class="form-control mb-2" id="role" name="role" value="CCTV Operator" readonly>
+                                    <!-- WORK PLACE -->
+                                    <label for="work_place" class="form-label">Place of Work</label>
+                                    <textarea class="form-control mb-2" id="work_place" name="work_place" readonly>Manila International Airport Authority</textarea>
+                                    <!-- DURATION -->
+                                    <label for="duration" class="form-label">Duration</label>
+                                    <input type="text" class="form-control mb-2" id="duration" name="duration" value="April 2022 - January 2023" readonly> 
+                                </div>
+                                <!-- SKILLS -->
+                                <h4 class="mb-1 text-center dash-info">Skills</h4>
+                                <div class="form-text pt-3 ps-3 pb-2">
+                                    Mastery rated from 1 to 10 where: <br>
+                                    1   =   No Fundamental Knowledge,
+                                    10  =   Mastered
+                                </div>
+                                <h6 class="mb-1 text-center dash-info">Programming Languages</h6>
+                                <ul class="m-1">
+                                    <li>C++ | 2/10</li>
+                                    <li>Java | 3/10</li>
+                                </ul>
+                                <div class="form-text pt-3 ps-3 pb-2">
+                                    Mastery rated from 1 to 10 where: <br>
+                                    1   =   No Fundamental Knowledge,
+                                    10  =   Mastered
+                                </div>
+                                <h6 class="mb-1 text-center dash-info">Web Development</h6>
+                                <ul class="m-1">
+                                    <li>PHP: PHP Hypertext Preprocessor | 5/10</li>
+                                    <li>Laravel Framework | 4/10</li>
+                                    <li>CoodeIgniter Framework | 2/10</li>
+                                    <li>HTML: Hypertext Markup Language | 4/10</li>
+                                    <li>CSS: Cascading Style Sheet | 4/10</li>
+                                    <li>Javascipt/JQuery   |  3/10</li>
+                                    <li>Bootstrap   |   4/10</li>
+                                    <li>MySQL   |   3/10</li>
+                                </ul>
+                                <h6 class="mb-1 text-center dash-info">Others</h6>
+                                <ul class="m-1">
+                                    <li>Git</li>
+                                    <li>Data Flow Diagram</li>
+                                    <li>Use Case Dagram</li>
+                                    <li>Entity Relationship</li>
+                                    <li>Swimlane Diagram</li>
+                                    <li>Writing Incident/Observation Report</li>
+                                    <li>Operating CCTV Consoles and CCTV Desktop Application</li>
+                                </ul>                                
+                                <h6 class="mb-1 text-center dash-info">Soft Skills</h6>
+                                <ul class="m-1">
+                                    <li>Goal-oriented</li>
+                                    <li>Team Collaboration</li>
+                                    <li>Problem Solving</li>
+                                    <li>Adaptability</li>
+                                    <li>Willing to train new skills and technologies</li>
+                                    <li>Written and Verbal Communication</li>
+                                    <li>Accepts positive critism</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2 col-sm-12 mx-auto p-3">
+                    Footnote:
+                </div>
+                <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+                </div>
+            </div>
+        </div>
+        <!-- END ABOUT ME CONTENT -->   
+        <!-- FOOTER -->
+        <div class="hr-line footer"></div>  
+        <footer>
+            <p class="p-3"> 
+                Developer: <span class="content-info dev_name"></span><br>
+                Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+               Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                Email: <span class="content-info" id="dev_email"></span>
+            </p>
+        </footer>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BOOTSTRAP v5 JS CDN -->
+    <script src="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="/personal-portfolio/public/assets/jquery-3.7.1.min.js"></script>
+    <!-- CUSTOMIZE JS/JQUERY -->
+    <script src="/personal-portfolio/public/assets/app.js"></script>
+</body>
+</html>
