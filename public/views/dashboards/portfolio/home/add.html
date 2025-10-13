@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP v5 CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- CUSTOMIZE CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/dashboard/app.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR FOR DEVICE WIITH SMALLER SCREENS -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary body-nav bg-nav-primary dash-nav">
+        <div class="container-fluid">
+            <!-- NAV BRAND -->
+            <a class="navbar-brand brand" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">MyPortfolio</a>
+            <!-- COLLAPSE TOGGLE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAV LINKS -->
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#home" active>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="#">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="auths/login.html">Login</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <!-- SIDEBAR TOGGLE FOR DEVICE WITH BIGGER SCREENS -->
+    <div class="sidebar-body" id="sidebarContent">
+        <div class="ms-2 me-5 mt-3 mb-3 pt-3 pb-3 text-center">
+            <a class="navbar-brand sidebar-brand" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">MyPortfolio</a>
+        </div>        
+        <div class="nav-divider"></div>  
+        <div class="ms-4 me-5 mt-3 mb-3 pt-3 pb-3">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6 active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link fs-6" href="#">About Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-divider"></div>  
+    </div>
+    <div class="container dash-container">
+        <div class="row mb-3">
+            <div class="col-md-11 col-sm-12 mx-auto pt-5">
+                <h3 class="content-title">Add Home Content</h3>   
+            </div>
+            <div class="row"> 
+                <div class="col-md-8 col-sm-12 mx-auto">          
+                    <form>
+                        <label for="intro" class="form-label">Introduction</label>
+                        <textarea class="form-control" name="intro" id="intro"></textarea>
+                    </form>
+                </div>     
+            </div>
+        </div>  
+        <!-- FOOTER -->
+        <div class="hr-line"></div>  
+        <footer class="footer">
+            <p class="p-3"> 
+                Developer: <span class="content-info dev_name"></span><br>
+                Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+               Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                Email: <span class="content-info" id="dev_email"></span>
+            </p>
+        </footer>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BOOTSTRAP v5 JS CDN -->
+    <script src="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="/personal-portfolio/public/assets/jquery-3.7.1.min.js"></script>
+    <!-- CUSTOMIZE JS/JQUERY -->
+    <script src="/personal-portfolio/public/assets/app.js"></script>
+</body>
+</html>
