@@ -34,7 +34,7 @@
                         <a class="nav-link link-nav-primary fs-6" href="#">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-nav-primary fs-6" href="/personal-portfolio/public/views/dashboards/portfolio/index.html" id="dashboard_link">Dashboard</a>
+                        <a class="nav-link link-nav-primary fs-6 dashboard_link" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-nav-primary fs-6" href="/personal-portfolio/public/views/auths/login.html">Login</a>
@@ -164,13 +164,25 @@
         </div>
         <!-- END ABOUT ME SECTION -->
         <!-- FOOTER -->
-        <footer class="container-fluid">
-            <p class="ps-5"> 
-                Developer: <span class="content-info dev_name"></span><br>
-                Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
-            Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
-                Email: <span class="content-info" id="dev_email"></span>
-            </p>
+        <footer class="container-fluid footer">
+            <div class="row mx-2 pt-5 pb-5">
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <p class="ps-5 text-start"> 
+                        Developer: <span class="content-info dev_name"></span><br>
+                        Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+                    Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                        Email: <span class="content-info" id="dev_email"></span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <h5 class="quicklinks">Quicklinks</h5>
+                    <p class="quicklinks"> 
+                        <a class="content-info content-link pb-2" href="#home">Home</a><br>
+                        <a class="content-info content-link pb-2" href="#aboutMe">About Me</a><br>
+                        <a class="content-info content-link dashboard_link" href="/personal-portfolio/public/views/dashboards/portfolio/index.html">Dashboard</a>
+                    </p>
+                </div>
+            </div>
         </footer>
         <!-- END FOOTER -->
     </div>
