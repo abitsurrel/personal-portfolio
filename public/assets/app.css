@@ -1,5 +1,5 @@
 /* 
-    CUSTOMIZED CSS
+    CUSTOMIZED CSS FOR ALL PAGES AND AUTHENTICATION
 */
 body {
   color: #fff;
@@ -9,6 +9,8 @@ body {
 }
 
 .hr-line {
+  position: absolute;
+  left: 0;
   margin: 0 !important;
   /* width: 100vw; */
   height: 5px;
@@ -113,8 +115,7 @@ body {
 
 /* NAV LINK ON HOVER */ 
 /* OVERRIDE NAVBAR PILLS:ACTIVE */
-.link-nav-primary:hover, .sidebar-link:hover,
-.brand:hover, .sidebar-brand:hover, .nav-pills .active{
+.link-nav-primary:hover, .nav-pills .active{
   color: #fff !important;
   font-weight: bolder;
   border: 1.5px solid #fff !important;
@@ -130,45 +131,68 @@ body {
   background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(2, 73, 114));
 }
 
-/* SIDEBAR NAV */
-.sidebar-body { 
-  position: fixed;
-  color: #000;
-  /* border-right: 2px solid rgb(255, 136, 0); */
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  width: 20vw;
-  height: 100vh;
-  background-color: #fff;
+.img {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 
-.sidebar-brand, .sidebar-link {
-  color: #000;
-  border: 1.5px solid transparent !important;
-  border-radius: .4rem !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-  margin-bottom: .5rem;
-}
-.sidebar-brand {
-  font-weight: bold;
+.img-overlay {
+  border-radius: 5px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-/* DASHBOARD CONTAINER */
-.dash-container {
+.img-mid {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
-  right: 0;
-  width: 80vw;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-@media only screen and (max-width:768){
-  .dash-container  {
-    left: 10px;
-    width: 95%;
-  }
-
+.img-btn {
+  border-radius: 2px;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.img:hover .img-overlay{
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+
+.img:hover .img-mid{
+  opacity: 1;
+}
+.img-btn:hover{
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: c;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 /* FORM STYLE */
  .form-control:disabled{
@@ -187,26 +211,12 @@ body {
   background-color: rgb(0, 34, 54);
   }
 
-.dash-info {
-  color :rgb(252, 168, 72);
-}
-
-.dash-border {
-  border: 1px solid rgb(252, 168, 72);
-  border-radius: 10px;
-}
-
-.img-profile {
-  display: block;
-  border: 2px solid rgb(252, 168, 72);
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* FOOTNOTE */
 .footer {
+  font-size: 12pt;
   position: absolute;
   left: 0;
+  text-align: center;
   width: 100%;
+  margin-bottom: 0 !important;
 }

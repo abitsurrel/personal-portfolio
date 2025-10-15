@@ -1,0 +1,20 @@
+/*
+    CUSTOMIZE CSS FOR PORTFOLIO AUTHS
+*/
+/* AUTHENTICATION */
+.auth {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 100%;
+  border: 2px solid rgb(252, 168, 72);
+  border-radius: 15px;
+}
+.auth-info {
+  text-decoration: none;
+  color: rgb(252, 168, 72);
+}
+.auth-info:hover {
+  color: rgb(2, 73, 114);
+  text-decoration: none;
+  font-weight: bold;
+}
