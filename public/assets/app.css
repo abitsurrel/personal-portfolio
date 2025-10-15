@@ -33,6 +33,13 @@ body {
   font-size: 18px;
 }
 
+@media only screen and (max-width:768px) {
+  .content-info{
+    color: rgb(255, 136, 0) !important;
+    font-size: 14px;
+  }
+}
+
 /* ATERBATE TEXT DECOR FOR CONTENT LILNK */
 .content-link {
   text-decoration: underline dotted #fff 1px;
@@ -64,17 +71,7 @@ body {
   /* width: 100vw; */
   height: 100vh !important;
 }
-@media only screen and (max-width:768px) {
-  .full-width {
-    position: relative;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    width: 100vw  !important;
-    height: 100vh !important;
-  }
-}
+
 
 /* ROW[EVEN] FOR ALERNATE TEEXT ALIGNMENT*/
 .text-right{
@@ -199,9 +196,6 @@ body {
   padding-bottom: 20px;
 }
 
-
-
-
 /* FORM STYLE */
  .form-control:disabled{
   color: #fff;
@@ -227,4 +221,5 @@ body {
   text-align: center;
   width: 100%;
   margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
