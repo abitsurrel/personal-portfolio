@@ -6,7 +6,7 @@ html, body {
 }
 body {
   color: #fff;
-  font-size: 14px;
+  font-size: 12pt;
   background-color: #000000;
   font-family:'Courier New', Courier, monospace;
 }
@@ -30,14 +30,7 @@ body {
 /* ALTERNATE TEXT COLOR FOR CONTENT INFO */
 .content-info {
   color: rgb(255, 136, 0) !important;
-  font-size: 18px;
-}
-
-@media only screen and (max-width:768px) {
-  .content-info{
-    color: rgb(255, 136, 0) !important;
-    font-size: 14px;
-  }
+  font-size: 13pt;
 }
 
 /* ATERBATE TEXT DECOR FOR CONTENT LILNK */
@@ -165,7 +158,7 @@ body {
   border-radius: 2px;
   background-color: rgb(255, 136, 0);
   color: white;
-  font-size: 14px;
+  font-size: 12pt;
   font-weight: bold;
   text-align: center;
   padding-left: 35px;
@@ -187,7 +180,7 @@ body {
   border-radius: 2px;
   background-color: c;
   color: white;
-  font-size: 16px;
+  font-size: 12pt;
   font-weight: bolder;
   text-align: center;
   padding-left: 35px;
@@ -215,11 +208,21 @@ body {
 
 /* FOOTNOTE */
 .footer {
+  font-size: 10pt;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #011627);
+}
+.quicklinks {
+    text-align: end;
+    padding-right: 3rem;
+  }
+
+.footer .content-info {
   font-size: 12pt;
-  position: absolute;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+}
+
+@media only screen and (max-width:768px) {
+  .quicklinks {
+    text-align: start;
+    padding-left: 3rem;
+  }
 }

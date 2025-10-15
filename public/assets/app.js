@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
 
     // DASHBOARD INDEX PAGE LINK
-    $("#dashboard_link").click(function(event) {
+    $(".dashboard_link").click(function(event) {
         event.preventDefault(); // PREVENT DEFAULT ACTION TO OPEN LINK IN CURRENT WINDOW
         window.open(this.href, '_blank'); // GET THE URL FROM href ATTRIB AND SPECIFY OPENING NEW TAB
     });
