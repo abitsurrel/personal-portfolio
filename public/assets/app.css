@@ -1,6 +1,9 @@
 /* 
     CUSTOMIZED CSS FOR ALL PAGES AND AUTHENTICATION
 */
+html, body {
+  overflow-x: hidden;
+}
 body {
   color: #fff;
   font-size: 14px;
@@ -52,15 +55,18 @@ body {
 
 /* FULL WIDTH[CONTAINER] */
 .full-width {
+  position: relative; /* TO MAKE TEXT OVER IMG*/
+  left: 0;
   margin-right: 0 !important;
   margin-left: 0 !important;
   padding-right: 0 !important;
   padding-left: 0 !important;
-  width: 100vw  !important;
+  /* width: 100vw; */
   height: 100vh !important;
 }
 @media only screen and (max-width:768px) {
   .full-width {
+    position: relative;
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding-right: 0 !important;
@@ -192,6 +198,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+
 
 
 /* FORM STYLE */

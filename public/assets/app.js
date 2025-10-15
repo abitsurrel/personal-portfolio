@@ -164,6 +164,15 @@ $(document).ready(function(){
     // INITIAL CHECK ON PAGE LOAD
     applyCollapseSideBar(); 
 
+    // function resizeHomeContent() {
+    //     var windowWidth = $(window).width();
+    //     $('#home').width(windowWidth);
+    // }
+
+    // INITIAL CHECK ON PAGE LOAD
+    // resizeHomeContent();
+
+    // CALL FUNCTIONS ON RESIZE
     $(window).on('resize', function() {
         applyCollapseSideBar();
     });

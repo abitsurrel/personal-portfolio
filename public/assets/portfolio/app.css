@@ -1,19 +1,14 @@
 /* 
     CUSTOMIZED CSS FOR PERSONAL PORTFOLIO LANDING PAGE
 */
-
-/* HOME */
-.home-container {  
-  position: relative;  /* TO MAKE THE TEXT BE IN FRONTOF IMG */
-  width: 90vw;
-}
-
+/* HOME BACKGROUND */
 .home-bg {  
   background-image: url('/personal-portfolio/public/assets/img/home-bg.PNG');
   background-color: linear-gradient(rgb(255, 136, 0), rgb(2, 73, 114)); /* BG IF IMG IS NOT AVAILABLE */
   background-repeat: no-repeat; /* DISALLOW BGTO REPEAT */
-  background-attachment: fixed; /* MAKE SURE THE ELEMENT IS ALWAYS COVERED AND NOT MOVING */
-  background-size: cover; /* COVER ENTIRE ELEMENT */
+  background-attachment:fixed; /* MAKE SURE THE ELEMENT IS ALWAYS COVERED AND NOT MOVING */
+  background-size:cover; /* COVER ENTIRE ELEMENT */
+  overflow: hidden;
   filter:blur(3px);
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -23,18 +18,9 @@
 
 /* HOME PARAGRAPH BODY */
 .home-content-body {
-  font-size: 30px;
-  font-family:'Courier New', Courier, monospace;
+  font-size: 30px;  
+  /* font-family:'Courier New', Courier, monospace; */
   margin-top: 2rem;
-}
-
-@media only screen and (max-width:768px) {
-  span {
-    font-size: 12px;
-  }
-  .home-content-body {
-    font-size: 12px;
-  }
 }
 
 .home-content-1 {
@@ -58,8 +44,8 @@
 .home-content-3 {
   position: absolute;
   bottom: 30px;
-  left: 6rem;
-  right: 16px;
+  /* left: 6rem; */
+  right: 30px;
   text-align: right;
 }
 .home-content-3-body {
@@ -83,7 +69,7 @@
   
   .home-content-2 {
     position: absolute;
-    /* top: 30%; */
+    top: 50%;
     left: 1rem;
     text-align: left;
     padding-left: 10px;
@@ -91,7 +77,11 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  
+  .home-content-2 img {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+  }
   .home-content-3 {
     position: absolute;
     /* bottom: 10px; */
