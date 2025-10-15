@@ -1,0 +1,83 @@
+/* 
+    CUSTOMIZED CSS FOR PERSONAL PORTFOLIO DASHBOARD
+*/
+
+/* SIDEBAR LINK ON HOVER */ 
+.sidebar-link:hover,
+.brand:hover, .sidebar-brand:hover{
+  color: #fff !important;
+  font-weight: bolder;
+  border: 1.5px solid #fff !important;
+  background-color: rgb(255, 136, 0) !important;
+  border-radius: .4rem;
+}
+.nav-divider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  background-image: linear-gradient(to right, rgb(255, 136, 0), rgb(2, 73, 114));
+}
+
+/* SIDEBAR NAV */
+.sidebar-body { 
+  position: fixed;
+  color: #000;
+  /* border-right: 2px solid rgb(255, 136, 0); */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 20vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.sidebar-brand, .sidebar-link {
+  color: #000;
+  border: 1.5px solid transparent !important;
+  border-radius: .4rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-bottom: .5rem;
+}
+.sidebar-brand {
+  font-weight: bold;
+}
+
+/* DASHBOARD CONTAINER */
+.dash-container {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width:768){
+  .dash-container  {
+    left: 10px;
+    width: 95%;
+  }
+
+}
+
+.dash-info {
+  color :rgb(252, 168, 72);
+}
+
+.dash-border {
+  border: 1px solid rgb(252, 168, 72);
+  border-radius: 10px;
+}
+
+.img-profile {
+  display: block;
+  border: 2px solid rgb(252, 168, 72);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.footer {
+position: absolute;
+left: 0;
+}
