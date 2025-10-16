@@ -111,7 +111,7 @@ body {
 
 /* NAV LINK ON HOVER */ 
 /* OVERRIDE NAVBAR PILLS:ACTIVE */
-.link-nav-primary:hover, .nav-pills .active{
+.brand:hover, .link-nav-primary:hover, .nav-pills .active{
   color: #fff !important;
   font-weight: bolder;
   border: 1.5px solid #fff !important;
@@ -223,6 +223,9 @@ body {
 @media only screen and (max-width:768px) {
   .quicklinks {
     text-align: start;
-    padding-left: 3rem;
+    padding-left: 1rem;
+  }
+  .footer .content-info {
+    font-size: 10pt;
   }
 }
