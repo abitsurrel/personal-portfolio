@@ -223,7 +223,7 @@ body {
 @media only screen and (max-width:768px) {
   .quicklinks {
     text-align: start;
-    padding-left: 1rem;
+    padding-left: 3rem;
   }
   .footer .content-info {
     font-size: 10pt;
