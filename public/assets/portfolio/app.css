@@ -13,7 +13,7 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
   padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-right: 0 !important;  
 }
 
 /* HOME BODY */
@@ -22,13 +22,13 @@
   position: absolute;
   top: 30px;
   width: 100%;
+  padding-top: 100px;
 }
 
 .home-content-1 p {
   text-align: left;
   font-size: 24pt; 
-  padding-left: 3rem;
-  padding-top: 1.5rem;
+  padding-left: 50px;
 }
 
 /* HOME CONTENT 2 */
@@ -41,14 +41,14 @@
 
 .home-content-2 img {
   border-radius: 50%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* HOME CONTENT 3 */
 .home-content-3 {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   text-align: right;
   width: 100%;
 }
@@ -64,7 +64,7 @@
   .home-content-1 {
     position: absolute;
     top: 10px;
-    padding-top: 10px;
+    padding-top: 80px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -79,28 +79,26 @@
   .home-content-2 {
     position: absolute;
     top: 38%;
-    left: 25%;
-    text-align: center;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin:auto;
   }
 
-  .home-content-2 img { 
+  /* .home-content-2 img { 
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    width: 80%;
+    width: 100%;
     height: auto;
-  }
+  } */
 
   .home-content-3 {
+    bottom: 5px;
     position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    width: 100%;
   }
 
   .home-content-3 p {

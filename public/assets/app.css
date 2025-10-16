@@ -75,8 +75,9 @@ body {
   height: 100%;
 }
 /* NAVBAR BG*/
-.bg-nav-primary {
-  background-color: #000 !important;
+
+.navbar {  
+  background-color: rgb(255, 255, 255, 0.7);  
 }
 
 /* ICON FROM BOOTSTRAP */
@@ -91,7 +92,9 @@ body {
 
 /* NAV BRAND */
 .brand {
-  color: #fff !important;
+  color: #000;
+  font-size: 20pt;
+  font-weight: bold;
   border: 1.5px solid transparent !important;
   border-radius: .4rem !important;
   padding-left: 1rem !important;
@@ -100,8 +103,7 @@ body {
 
 /* NAVBAR FONT COLOR */
 .link-nav-primary {
-  color: #fff !important;
-  /* font-size: 18px; */
+  color: #000;
   border: 1.5px solid transparent !important;
   border-radius: .4rem !important;
   padding-left: 1rem !important;
