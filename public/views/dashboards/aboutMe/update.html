@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP v5 CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- CUSTOMIZE CSS FOR ALL PAGES -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/app.css">
+    <!-- CUSTOMIZE CSS FOR DASHBOARD -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/dashboard.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR FOR DEVICE WITH SMALLER SCREENS -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary body-nav bg-nav-primary d-none dash-nav">
+        <div class="container-fluid">
+            <!-- NAV BRAND -->
+            <a class="navbar-brand brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+            <!-- END NAV BRAND -->
+            <!-- COLLAPSE TOGGLE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- END COLLAPSE TOGGLE BUTTON -->
+            <!-- NAV LINKS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary active" aria-current="page" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/works/index.html">Works</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END NAV LINKS -->
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- SIDEBAR TOGGLE FOR DEVICE WITH BIGGER SCREENS -->
+    <div class="sidebar-body" id="sidebarContent">
+        <div class="ms-2 me-4 mt-3 mb-3 pt-3 pb-3 text-center">
+            <a class="navbar-brand sidebar-brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+        </div>        
+        <div class="nav-divider"></div>  
+        <div class="ms-4 me-5 mt-3 mb-3 pt-3 pb-3">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link active" aria-current="page" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/works/index.html">My Works</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-divider"></div>  
+    </div>
+    <!-- END SIDEBAR -->
+     <!-- CONTAINER -->
+    <div class="container dash-container">
+        <div class="row m-1 p-1">
+            <div class="col-md-11 col-sm-12 mx-auto pt-3">
+                <h3 class="content-title">Update About Me Content</h3>   
+            </div>         
+        </div>  
+        <!-- ADD ABOUT ME CONTENT -->
+        <div class="row m-1 p-1">    
+            <div class="col-md-12 col-sm-12 mx-auto">    
+                <!-- FORM -->
+                <form>
+                    <!-- INTRODUCTION -->
+                    <div class="row">                 
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <label class="form-label" for="intro_home">Introduction</label>
+                            <textarea class="ta-full-width" name="intro_home" id="intro_home"></textarea>
+                        </div>
+                    </div>   
+                    <!-- END INTRODUCTION -->
+                    <!-- PERSONAL INFORMATION -->
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <h3 class="mb-2 text-center dash-info">Personal Information</h3>
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control mb-2" id="name" name="name" value="Dianne  Russel Ocampo">
+                            <label for="nick_name" class="form-label">Nickname</label>
+                            <input type="text" class="form-control mb-2" id="nick_name" name="nick_name" value="Dianne">
+                            <label for="phone_number" class="form-label">Phone Number</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">09</span>
+                                <input type="tel" class="form-control" id="phone_number" name="phone_number" pattern="{0-9}[9]" value="216346921">
+                            </div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control mb-2" id="email" name="email" value="diannerusselocampo@gmail.com">
+                            <!-- BUTTON TO TRIGGER MODAL -->
+                            <button type="button" class="mt-2 dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#socialAccountsModal">
+                            <b class="p-1">+</b>
+                            </button>
+                            <!-- END BUTTON -->
+                            <!-- SOCIAL ACCOUNTS MODAL -->
+                            <div class="modal fade" id="socialAccountsModal" tabindex="-1" aria-labelledby="socialAccountsModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title dash-modal-info" id="socialAccountsModalLabel">Social Accounts</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body dash-modal-info">
+                                            <label for="site" class="form-label">Site</label>
+                                            <input type="text" class="form-control mb-2" id="site" name="site">
+                                            <label for="links" class="form-label">Link</label>
+                                            <input type="url" class="form-control" id="links" name="links">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-custom btn-sm">Add Information</button>
+                                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END MODAL -->
+                            <h5 class="mb-1 mt-3 dash-info">Social Accounts</h5>
+                            <label for="site" class="form-label">Site</label>
+                            <input type="text" class="form-control mb-2" id="site" name="site" value="Github">
+                            <label for="links" class="form-label">Link</label>
+                            <input type="url" class="form-control mb-2" id="links" name="links" value="https://github.com/abitsurrel">
+                            <label for="site" class="form-label">Site</label>
+                            <input type="text" class="form-control mb-2" id="site" name="site" value="GitLab">
+                            <label for="links" class="form-label">Link</label>
+                            <input type="url" class="form-control" id="links" name="links" value="https://gitlab.com/diocampo1">
+                        </div>
+                    </div>
+                    <!-- END PERSONAL INFORMATION -->
+                    <!-- EDUCATIONAL BACKGROUND -->
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <!-- BUTTON TO TRIGGER MODAL -->
+                            <button type="button" class="mt-2 dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#educBackgroundModal">
+                            <b class="p-1">+</b>
+                            </button>
+                            <!-- END BUTTON -->
+                            <!-- EDUCATIONAL BACKGROUND MODAL -->
+                            <div class="modal fade" id="educBackgroundModal" tabindex="-1" aria-labelledby="educBackgroundModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title dash-modal-info" id="educBackgroundModalLabel">Educational Background</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body dash-modal-info">
+                                            <label for="level" class="form-label">Level</label>
+                                            <select class="form-select mb-2" name="level" id="level">
+                                                <option selected>Select Level of Education</option>
+                                                <option value="Elementary Education">Elementary Education</option>
+                                                <option value="Secondary Education">Secondary Education</option>
+                                                <option value="Associate's Degree">Associate's Degree</option>
+                                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                                <option value="Master's Degree">Master's Degree</option>
+                                                <option value="Doctoral Degree">Doctoral Degree</option>
+                                            </select>
+                                            <label for="school" class="form-label">School</label>
+                                            <input type="text" class="form-control mb-2" id="school" name="school">
+                                            <label for="course" class="form-label">Course</label>
+                                            <input type="text" class="form-control mb-2" id="course" name="course">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-custom btn-sm">Add Information</button>
+                                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END MODAL -->
+                            <!-- EDUCATIONAL BACKGROUND -->
+                            <h3 class="mb-2 text-center dash-info">Educational Background</h3>
+                            <label for="level" class="form-label">Level</label>
+                            <select class="form-select mb-2" name="level" id="level">
+                                <option>Select Level of Education</option>
+                                <option value="Elementary Education">Elementary Education</option>
+                                <option value="Secondary Education">Secondary Education</option>
+                                <option value="Associate's Degree">Associate's Degree</option>
+                                <option value="Bachelor's Degree" selected>Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctoral Degree">Doctoral Degree</option>
+                            </select>
+                            <label for="school" class="form-label">School</label>
+                            <input type="text" class="form-control mb-2" id="school" name="school" value="Ateneo de Naga University">
+                            <label for="course" class="form-label">Course</label>
+                            <input type="text" class="form-control mb-2" id="course" name="course" value="Bachelor of Science in Information Technology">
+                        </div>
+                    </div>
+                    <!-- END EDUCATIONAL BACKGROUND -->
+                    <!-- WORK EXPERIENCE -->
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <!-- BUTTON TO TRIGGER MODAL -->
+                            <button type="button" class="mt-2 dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#workExpModal">
+                            <b class="p-1">+</b>
+                            </button>
+                            <!-- END BUTTON -->
+                            <!-- WORK EXPERIENCE MODAL -->
+                            <div class="modal fade" id="workExpModal" tabindex="-1" aria-labelledby="workExpModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title dash-modal-info" id="educBackgroundModalLabel">Work Experience</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body dash-modal-info">
+                                           <!-- ROLE -->
+                                            <label for="role" class="form-label">Role</label>
+                                            <input type="text" class="form-control mb-2" id="role" name="role">
+                                            <!-- WORK PLACE -->
+                                            <label for="work_place" class="form-label">Place of Work</label>
+                                            <textarea class="form-control mb-2" id="work_place" name="work_place"></textarea>
+                                            <!-- DURATION -->
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                                    <label for="start_date" class="form-label">Start Date</label>
+                                                    <input type="date" name="start_date" id="start_date">
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                                    <label for="start_date" class="form-label">End Date</label>
+                                                    <input type="date" name="end_date" id="end_date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-custom btn-sm">Add Information</button>
+                                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END MODAL -->
+                            <h3 class="mb-2 text-center dash-info">Work Experience(s)</h3>
+                            <!-- ROLE -->
+                            <label for="role" class="form-label">Role</label>
+                            <input type="text" class="form-control mb-2" id="role" name="role" value="CCTV Operator">
+                            <!-- WORK PLACE -->
+                            <label for="work_place" class="form-label">Place of Work</label>
+                            <textarea class="form-control mb-2" id="work_place" name="work_place">Manila International Airport Authority</textarea>
+                            <!-- DURATION -->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                    <label for="start_date" class="form-label">Start Date</label>
+                                    <input type="date" name="start_date" id="start_date" value="2022-04-21">
+                                </div>
+                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                    <label for="start_date" class="form-label">End Date</label>
+                                    <input type="date" name="end_date" id="end_date" value="2023-01-21">
+                                </div>
+                            </div>
+                            <!-- ROLE -->
+                            <label for="role" class="form-label">Role</label>
+                            <input type="text" class="form-control mb-2" id="role" name="role" value="Web Developer">
+                            <!-- WORK PLACE -->
+                            <label for="work_place" class="form-label">Place of Work</label>
+                            <textarea class="form-control mb-2" id="work_place" name="work_place">SDW Web Solutions</textarea>
+                            <!-- DURATION -->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                    <label for="start_date" class="form-label">Start Date</label>
+                                    <input type="date" name="start_date" id="start_date" value="2021-02-10">
+                                </div>
+                                <div class="col-md-6 col-sm-12 mx-auto d-grid gap-2 p-2">
+                                    <label for="start_date" class="form-label">End Date</label>
+                                    <input type="date" name="end_date" id="end_date" value="2021-05-11">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WORK EXPERIENCE -->
+                    <!-- SKILLS -->
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <h3 class="mb-3 text-center dash-info">Skills</h3> 
+                            <div class="row mb-2">
+                                <div class="col-md-12 col-sm-12"> 
+                                    <div class="form-text pt-2 pb-1">
+                                        Mastery rated from 1 to 10 where: <br>
+                                        1   =   No Fundamental Knowledge,
+                                        10  =   Mastered
+                                    </div>
+                                    <!-- BUTTON TO TRIGGER MODAL -->
+                                    <button type="button" class="mb-2 dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#programmingLanguagesModal">
+                                    <b class="p-1">+</b>
+                                    </button>
+                                    <!-- END BUTTON -->
+                                    <!-- PROGRAMMING LANGUAGES MODAL -->
+                                    <div class="modal fade" id="programmingLanguagesModal" tabindex="-1" aria-labelledby="programmingLanguagesModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title dash-modal-info" id="programmingLanguagesModalLabel">Programming Language</h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body dash-modal-info">
+                                                    <label for="prog_languages" class="form-label">Language</label>
+                                                    <select class="form-select mb-2" name="prog_languages" id="prog_languages">
+                                                        <option selected>Select Programming Language</option>
+                                                        <option value="C">C</option>
+                                                        <option value="C#">C#</option>
+                                                        <option value="C++">C++</option>
+                                                        <option value="Java">Java</option>
+                                                        <option value="PHP:PHP Hypertext Preprocessor">PHP:PHP Hypertext Preprocessor</option>
+                                                        <option value="Python">Python</option>
+                                                    </select>
+                                                    <label for="prog_ratings" class="form-label">Rating: </label>
+                                                    <span class="prog_ratingValue"></span>
+                                                    <input type="range" class="form-range prog_ratings" name="prog_ratings" min="0" max="10">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-custom btn-sm">Add Social Account</button>
+                                                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END MODAL -->
+                                    <h5 class="mb-1 dash-info">Programming Languages</h5>
+                                    <!-- PHP -->
+                                    <label for="prog_languages" class="form-label">Language</label>
+                                    <select class="form-select mb-2" name="prog_languages" id="prog_languages">
+                                        <option>Select Programming Language</option>
+                                        <option value="C">C</option>
+                                        <option value="C#">C#</option>
+                                        <option value="C++">C++</option>
+                                        <option value="Java">Java</option>
+                                        <option value="PHP:PHP Hypertext Preprocessor" selected>PHP:PHP Hypertext Preprocessor</option>
+                                        <option value="Python">Python</option>
+                                    </select>
+                                    <label for="prog_ratings" class="form-label">Rating: </label>
+                                    <span>6</span>
+                                    <input type="range" class="form-range prog_ratings" name="prog_ratings" min="0" max="10" value="6">
+                                    <!-- END PHP -->
+                                    <!-- JAVA -->
+                                    <label for="prog_languages" class="form-label mt-2">Language</label>
+                                    <select class="form-select mb-2" name="prog_languages" id="prog_languages">
+                                        <option>Select Programming Language</option>
+                                        <option value="C">C</option>
+                                        <option value="C#">C#</option>
+                                        <option value="C++">C++</option>
+                                        <option value="Java" selected>Java</option>
+                                        <option value="PHP:PHP Hypertext Preprocessor">PHP:PHP Hypertext Preprocessor</option>
+                                        <option value="Python">Python</option>
+                                    </select>
+                                    <label for="prog_ratings" class="form-label">Rating: </label>
+                                    <span>3</span>
+                                    <input type="range" class="form-range prog_ratings" name="prog_ratings" min="0" max="10" value="3">
+                                    <!-- END JAVA -->
+                                    <!-- C++ -->
+                                    <label for="prog_languages" class="form-label mt-2">Language</label>
+                                    <select class="form-select mb-2" name="prog_languages" id="prog_languages">
+                                        <option>Select Programming Language</option>
+                                        <option value="C">C</option>
+                                        <option value="C#">C#</option>
+                                        <option value="C++" selected>C++</option>
+                                        <option value="Java">Java</option>
+                                        <option value="PHP:PHP Hypertext Preprocessor">PHP:PHP Hypertext Preprocessor</option>
+                                        <option value="Python">Python</option>
+                                    </select>
+                                    <label for="prog_ratings" class="form-label">Rating: </label>
+                                    <span>3</span>
+                                    <input type="range" class="form-range prog_ratings" name="prog_ratings" min="0" max="10" value="3">
+                                    <!-- END C++ -->
+                                </div>
+                            </div>   
+                            <!-- WEB DEV -->
+                            <div class="row mt-2 mb-2">
+                                <div class="col-md-12 col-sm-12">
+                                    <!-- BUTTON TO TRIGGER MODAL -->
+                                    <button type="button" class="dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#webDevModal">
+                                    <b class="p-1">+</b>
+                                    </button>
+                                    <!-- END BUTTON -->
+                                    <!-- WEBB DEVELOPMENT MODAL -->
+                                    <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title dash-modal-info" id="webDevModalLabel">Web Development</h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body dash-modal-info">
+                                                    <label for="web_tools" class="form-label">Tools</label>
+                                                    <input type="text" class="form-control" name="web_tools" id="web_tools">       
+                                                    <label for="web_tools_ratings" class="form-label mt-2">Rating: </label>
+                                                    <span class="web_tools_ratingValue"></span>
+                                                    <input type="range" class="form-range web_tools_ratings" name="web_tools_ratings" min="0" max="10">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-custom btn-sm">Add Social Account</button>
+                                                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END MODAL -->
+                                    <h5 class="mb-2 dash-info">Web Development</h5>
+                                    <label for="web_tools" class="form-label">Tools</label>
+                                    <input type="text" class="form-control" name="web_tools" id="web_tools" value="Laravel Framework">                            
+                                    <label for="web_tools_ratings" class="form-label mt-2">Rating: </label>
+                                    <span>5</span>
+                                    <input type="range" class="form-range web_tools_ratings" name="web_tools_ratings" min="0" max="10" value="5"> 
+                                </div>
+                            </div>     
+                            <!-- END WEB DEV -->
+                            <!-- SOFT SKILLS --> 
+                            <div class="row mt-2 mb-2">
+                                <div class="col-md-12 col-sm-12"> 
+                                    <h5 class="mb-2 dash-info">Soft Skills</h5>
+                                    <input type="text" class="form-control mb-1" name="soft_skills" id="soft_skills" value="Goal-oriented">
+                                    <input type="text" class="form-control mb-1" name="soft_skills" id="soft_skills" value="Team Collaboration">   
+                                    <input type="text" class="form-control mb-1" name="soft_skills" id="soft_skills" value="Problem Solving">   
+                                    <input type="text" class="form-control mb-1" name="soft_skills" id="soft_skills" value="Adaptability">   
+                                </div>
+                            </div>      
+                            <!-- END SOFT SKILLS -->
+                        </div>
+                    </div>
+                    <!-- END SKILLS -->
+                    <!-- FOOTNOTE -->
+                    <div class="row">                        
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <label class="form-label" for="profile_picture">Footnote</label>
+                            <textarea class="ta-full-width" name="footnote_home" id="footnote_home"></textarea>
+                        </div>
+                    </div> 
+                    <!-- END FOOTNOTE -->
+                    <div class="row">
+                        <div class="col-md-3 mx-auto p-2 d-grid gap-2">
+                            <a type="button" class="btn btn-light btn-custom" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">Submit</a>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM -->
+            </div> 
+        </div>
+        <!-- END ADD ABOUT ME CONTENT -->
+        <!-- FOOTER -->
+        <footer class="container-fluid footer">
+            <div class="row pt-5">
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <p class="ps-5 text-start"> 
+                        Developer: <span class="content-info dev_name"></span><br>
+                        Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+                    Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                        Email: <span class="content-info" id="dev_email"></span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <h5 class="quicklinks">Quicklinks</h5>
+                    <p class="quicklinks"> 
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a><br>
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a><br>
+                        <a class="content-info content-link dashboard_link" href="/personal-portfolio/index.html">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BOOTSTRAP v5 JS CDN -->
+    <script src="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="/personal-portfolio/public/assets/jquery-3.7.1.min.js"></script>
+    <!-- CUSTOMIZE JS/JQUERY -->
+    <script src="/personal-portfolio/public/assets/app.js"></script>
+</body>
+</html>

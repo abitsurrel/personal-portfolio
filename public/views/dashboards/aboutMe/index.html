@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP v5 CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- CUSTOMIZE CSS FOR ALL PAGES -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/app.css">
+    <!-- CUSTOMIZE CSS FOR DASHBOARD -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/dashboard.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR FOR DEVICE WITH SMALLER SCREENS -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary body-nav bg-nav-primary d-none dash-nav">
+        <div class="container-fluid">
+            <!-- NAV BRAND -->
+            <a class="navbar-brand brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+            <!-- END NAV BRAND -->
+            <!-- COLLAPSE TOGGLE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- END COLLAPSE TOGGLE BUTTON -->
+            <!-- NAV LINKS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary active" aria-current="page" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/works/index.html">Works</a>
+                    </li>
+                </ul>
+             </div>
+             <!-- END NAV LINKS -->
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- SIDEBAR TOGGLE FOR DEVICE WITH BIGGER SCREENS -->
+    <div class="sidebar-body" id="sidebarContent">
+        <div class="ms-2 me-4 mt-3 mb-3 pt-3 pb-3 text-center">
+            <a class="navbar-brand sidebar-brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+        </div>        
+        <div class="nav-divider"></div>  
+        <div class="ms-4 me-5 mt-3 mb-3 pt-3 pb-3">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link active" aria-current="page" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/works/index.html">My Works</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-divider"></div>  
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- CONTAINER -->
+    <div class="container dash-container">
+        <div class="row m-1 p-1">
+            <div class="col-md-11 col-sm-12 mx-auto pt-3">
+                <h3 class="content-title">About Me Content</h3>   
+            </div>
+            <div class="col-md-11 col-sm-12 mx-auto pt-3 dash-btn">
+                <a type="button" class="btn btn-sm btn-custom float-end me-3" href="/personal-portfolio/public/views/dashboards/aboutMe/update.html">Update Information</a>  
+                <a type="button" class="btn btn-sm btn-custom float-end me-3" href="/personal-portfolio/public/views/dashboards/aboutMe/add.html">Add Information</a>  
+            </div>            
+        </div>  
+        <!-- INTRODUCTION -->
+        <div class="row m-1 p-1">    
+            <div class="col-md-2 col-sm-12 mx-auto p-3">
+                Introduction:
+            </div>
+            <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+            </div>
+        </div>
+        <!-- END  INTRODUCTION -->
+        <!-- BODY -->
+        <div class="row m-1 p-1">
+            <div class="col-md-2 col-sm-12 mx-auto p-3">
+                Body:
+            </div>
+            <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">      
+                <!-- FORM -->
+                <form>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mx-auto p-3">
+                            <!-- PERSONAL INFORMATION -->
+                            <h4 class="mb-1 text-center dash-info">Personal Information</h4>
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control mb-2" id="name" name="name" readonly>
+                            <label for="nick_name" class="form-label">Nickname</label>
+                            <input type="text" class="form-control mb-2" id="nick_name" name="nick_name" readonly>
+                            <!-- END PERSONAL INFORMATION -->
+                            <!-- EDUCATIONAL BACKGROUND -->
+                            <h4 class="mb-1 mt-3 text-center dash-info">Educational Background</h4>
+                            <label for="school" class="form-label">School</label>
+                            <input type="text" class="form-control mb-2" id="school" name="school" readonly>
+                            <label for="course" class="form-label">Course</label>
+                            <input type="text" class="form-control mb-2" id="course" name="course" readonly>
+                            <!-- END EDUCATIONAL BACKGROUND -->
+                            <!-- WORK EXPERIENCE -->
+                            <h4 class="mb-1 mt-3 text-center dash-info">Work Experience(s)</h4>
+                            <div class="col-md-12 col-sm-12 p-3">
+                                <!-- ROLE -->
+                                <label for="role" class="form-label">Role</label>
+                                <input type="text" class="form-control mb-2" id="role" name="role" readonly>
+                                <!-- WORK PLACE -->
+                                <label for="work_place" class="form-label">Place of Work</label>
+                                <textarea class="form-control mb-2" id="work_place" name="work_place" readonly></textarea>
+                                <!-- DURATION -->
+                                <label for="duration" class="form-label">Duration</label>
+                                <input type="text" class="form-control mb-2" id="duration" name="duration" readonly>
+                            </div>
+                            <!-- END WORK EXPERIENCE -->
+                            <!-- SKILLS -->
+                            <h4 class="mb-3 text-center dash-info">Skills</h4>
+                            <div class="form-text pt-3 ps-3 pb-2">
+                                Mastery rated from 1 to 10 where: <br>
+                                1   =   No Fundamental Knowledge,
+                                10  =   Mastered
+                            </div>
+                            <h6 class="mt-2 text-center dash-info">Programming Languages</h6>
+                            <div class="form-text ps-3 pb-2 mb-2">
+                                Mastery rated from 1 to 10 where: <br>
+                                1   =   No Fundamental Knowledge,
+                                10  =   Mastered
+                            </div>
+                            <h6 class="mb-3 text-center dash-info">Web Development</h6>
+                            <h5 class="mb-3 text-center dash-info">Others</h5>             
+                            <h6 class="mb-3 text-center dash-info">Technical Skills</h6>                
+                            <h6 class="mb-3 text-center dash-info">Soft Skills</h6>
+                            <!-- END SKILLS -->
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM -->
+            </div> 
+        </div>
+        <!-- END BODY -->
+        <!-- FOOTNOTE -->
+        <div class="row m-1 p-1">
+            <div class="col-md-2 col-sm-12 mx-auto p-3">
+                Footnote:
+            </div>
+            <div class="col-md-7 col-sm-12 mx-auto p-3 dash-border">
+            </div>
+        </div> 
+        <!-- END FOOTNOTE -->
+        <!-- FOOTER -->
+        <footer class="container-fluid footer">
+            <div class="row pt-5">
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <p class="ps-5 text-start"> 
+                        Developer: <span class="content-info dev_name"></span><br>
+                        Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+                    Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                        Email: <span class="content-info" id="dev_email"></span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <h5 class="quicklinks">Quicklinks</h5>
+                    <p class="quicklinks"> 
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a><br>
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a><br>
+                        <a class="content-info content-link dashboard_link" href="/personal-portfolio/index.html">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BOOTSTRAP v5 JS CDN -->
+    <script src="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="/personal-portfolio/public/assets/jquery-3.7.1.min.js"></script>
+    <!-- CUSTOMIZE JS/JQUERY -->
+    <script src="/personal-portfolio/public/assets/app.js"></script>
+</body>
+</html>
