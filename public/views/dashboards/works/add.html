@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP v5 CSS -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- CUSTOMIZE CSS FOR ALL PAGES -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/app.css">
+    <!-- CUSTOMIZE CSS FOR DASHBOARD -->
+    <link rel="stylesheet" href="/personal-portfolio/public/assets/dashboard.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR FOR DEVICE WITH SMALLER SCREENS -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary body-nav bg-nav-primary d-none dash-nav">
+        <div class="container-fluid">
+            <!-- NAV BRAND -->
+            <a class="navbar-brand brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+            <!-- END NAV BRAND -->
+            <!-- COLLAPSE TOGGLE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- END COLLAPSE TOGGLE BUTTON -->
+            <!-- NAV LINKS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-nav-primary active" aria-current="page" href="/personal-portfolio/public/views/dashboards/works/index.html">My Works</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END NAV LINKS -->
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- SIDEBAR TOGGLE FOR DEVICE WITH BIGGER SCREENS -->
+    <div class="sidebar-body" id="sidebarContent">
+        <div class="ms-2 me-4 mt-3 mb-3 pt-3 pb-3 text-center">
+            <a class="navbar-brand sidebar-brand brand_link" href="/personal-portfolio/index.html">MyPortfolio</a>
+        </div>        
+        <div class="nav-divider"></div>  
+        <div class="ms-4 me-5 mt-3 mb-3 pt-3 pb-3">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link active" aria-current="page" href="/personal-portfolio/public/views/dashboards/works/index.html">My Works</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-divider"></div>  
+    </div>
+    <!-- END SIDEBAR -->
+     <!-- CONTAINER -->
+    <div class="container dash-container">
+        <div class="row m-1 p-1">
+            <div class="col-md-11 col-sm-12 mx-auto pt-3">
+                <h3 class="content-title">Add My Works Content</h3>   
+            </div>        
+        </div>  
+        <!-- ADD WORKS CONTENT -->
+        <div class="row m-1 p-1">    
+            <div class="col-md-11 col-sm-12 mx-auto">
+                <form>
+                    <div class="row">                 
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">
+                            <label class="form-label" for="intro_home">Introduction</label>
+                            <textarea class="ta-full-width" name="intro_home" id="intro_home"></textarea>
+                        </div>
+                    </div>   
+                    <div class="row">   
+                        <div class="col-md-8 col-sm-12 mx-auto p-2"> 
+                            <!-- BUTTON TO TRIGGER MODAL -->
+                            <button type="button" class="mt-2 mb-2 dash-modal-button float-end" data-bs-toggle="modal" data-bs-target="#myWorksModal">
+                            <b class="p-1">+</b>
+                            </button>
+                            <!-- END BUTTON -->
+                            <!-- MY WORKS MODAL -->
+                            <div class="modal fade" id="myWorksModal" tabindex="-1" aria-labelledby="myWorksModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title dash-modal-info" id="myWorksModalLabel">My Works</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body dash-modal-info">                                   
+                                            <label class="form-label" for="snippets">Snippet</label>
+                                            <input type="file" class="form-control mb-2" name="snippets" id="snippets">
+                                            <label class="form-label" for="work_links">Link</label>
+                                            <input type="text" class="form-control" name="work_links" id="work_links">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-custom btn-sm">Add Social Account</button>
+                                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END MODAL -->                                     
+                            <label class="form-label" for="snippets">Snippet</label>
+                            <input type="file" class="form-control mb-2" name="snippets" id="snippets">
+                            <label class="form-label" for="work_links">Link</label>
+                            <input type="text" class="form-control" name="work_links" id="work_links">
+                        </div>
+                    </div> 
+                    <div class="row">                 
+                        <div class="col-md-8 col-sm-12 mx-auto p-2">     
+                            <label class="form-label" for="profile_picture">Footnote</label>
+                            <textarea class="ta-full-width" name="footnote_home" id="footnote_home"></textarea>
+                        </div>
+                    </div>   
+                    <div class="col-md-3 mx-auto p-2 d-grid gap-2">
+                        <a type="button" class="btn btn-light btn-custom" href="/personal-portfolio/public/views/dashboards/works/index.html">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END WORKS CONTENT -->
+        <!-- FOOTER -->
+        <footer class="container-fluid footer">
+            <div class="row pt-5">
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <p class="ps-5 text-start"> 
+                        Developer: <span class="content-info dev_name"></span><br>
+                        Github Account: <a href="https://github.com/abitsurrel" class="content-info content-link" id="dev_github_accnt" title="Visit now">github.com/abitsurrel</a><br>
+                    Gitlab Account: <a href="https://gitlab.com/diocampo1" class="content-info content-link" id="dev_gitlab_accnt" title="Visit now">gitlab.com/diocampo1</a><br>
+                        Email: <span class="content-info" id="dev_email"></span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 mx-auto">
+                    <h5 class="quicklinks">Quicklinks</h5>
+                    <p class="quicklinks"> 
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/home/index.html">Home</a><br>
+                        <a class="content-info content-link pb-2" href="/personal-portfolio/public/views/dashboards/aboutMe/index.html">About Me</a><br>
+                        <a class="content-info content-link dashboard_link" href="/personal-portfolio/index.html">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BOOTSTRAP v5 JS CDN -->
+    <script src="/personal-portfolio/public/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="/personal-portfolio/public/assets/jquery-3.7.1.min.js"></script>
+    <!-- CUSTOMIZE JS/JQUERY -->
+    <script src="/personal-portfolio/public/assets/app.js"></script>
+</body>
+</html>

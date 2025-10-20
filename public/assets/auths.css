@@ -18,3 +18,13 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+.error-border, .error-border:focus {
+  border: 2px solid red;
+  background-color: rgb(255, 224, 224);
+}
+
+.valid-border, .valid-border:focus {
+  border: 2px solid green;
+  background-color: rgb(212, 252, 212);
+}
