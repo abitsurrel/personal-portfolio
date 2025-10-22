@@ -58,6 +58,22 @@ $(document).ready(function(){
         changeNavbarBGOnScroll();
     });
 
+    /**
+     *  DOWNLOADING ADMIN'S RESUME
+     *      -   This method provides more control over the downloaded filename 
+     *          and is useful for files generated on the fly or fetched via AJAX.
+     */
+    
+    /*
+    // DOWNLOAD RESUME
+    $('#downloadResume').click(function() {
+        // FILEPATH OF RESUME
+        var filepath = '/personal-portfolio/public/assets/files/DianneRusselOcampo_Resumé.pdf';
+        window.location.href = filepath;
+        window.open(this.href, "_blank"); // GET THE URL FROM href ATTRIB AND SPECIFY OPENING NEW TAB
+    });
+    */
+
     // MyPortfolio INDEX PAGE LINK
     $(".brand_link").click(function(event) {
         event.preventDefault(); // PREVENT DEFAULT ACTION TO OPEN LINK IN CURRENT WINDOW
@@ -156,7 +172,11 @@ $(document).ready(function(){
 
     $("#dev_email").text("diannerusselocampo@gmail.com");
 
-    /*  COMPARING PASSWORDS  */
+    /*
+    *
+    *   COMPARING PASSWORDS
+    * 
+    */ 
     // ON PASSWORD KEYUP
     $('#password').on("keyup", function() {
         var passwordVal = $('#password').val();
