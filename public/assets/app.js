@@ -33,14 +33,16 @@ $(document).ready(function(){
     $("img").bind("contextmenu", function(event) {
         return false;
     });
+
+    var breakpoint = 768;
     
     // CHANGING NAVBAR BACKGORUND COLOR ON SCROLL
     function changeNavbarBGOnScroll() {
-        if(window.scrollY == 0) {            
-            $(".navbar").css("background", "rgb(0, 0, 0, 0)");
+        if(window.scrollY == 0 && $(window).width() > breakpoint) {            
+            $(".navbar").css("background-color", "rgb(0, 0, 0, 0)");
         }
         else {
-            $(".navbar").css("background", "rgb(0, 0, 0, 0.7)");
+            $(".navbar").css("background-color", "rgb(0, 0, 0, 0.7)");
         }
     };
 
@@ -49,6 +51,10 @@ $(document).ready(function(){
 
     // CALL FUNCTION TO CHANCGE NAVBAR BG ON SCROLL
     window.addEventListener('scroll', function() {
+        changeNavbarBGOnScroll();
+    });
+
+    window.addEventListener('resize', function() {
         changeNavbarBGOnScroll();
     });
 

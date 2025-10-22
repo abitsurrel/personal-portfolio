@@ -75,7 +75,7 @@
         </div>  
         <!-- ADD WORKS CONTENT -->
         <div class="row m-1 p-1">    
-            <div class="col-md-11 col-sm-12 mx-auto">
+            <div class="col-md-12 col-sm-12 mx-auto">
                 <form>
                     <div class="row">                 
                         <div class="col-md-8 col-sm-12 mx-auto p-2">
@@ -98,24 +98,31 @@
                                             <h3 class="modal-title dash-modal-info" id="myWorksModalLabel">My Works</h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body dash-modal-info">                                   
-                                            <label class="form-label" for="snippets">Snippet</label>
-                                            <input type="file" class="form-control mb-2" name="snippets" id="snippets">
+                                        <div class="modal-body dash-modal-info">        
+                                            <label class="form-label" for="work_titles">Title</label>
+                                            <input type="text" class="form-control mb-2" name="work_titles" id="work_titles">                        
                                             <label class="form-label" for="work_links">Link</label>
-                                            <input type="text" class="form-control" name="work_links" id="work_links">
+                                            <input type="text" class="form-control mb-2" name="work_links" id="work_links">
+                                            <label class="form-label" for="work_snippets">Snippet</label>
+                                            <input type="file" class="form-control" name="work_snippets" id="work_snippets">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-custom btn-sm">Add Social Account</button>
+                                            <button type="button" class="btn btn-custom btn-sm">Add Information</button>
                                             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- END MODAL -->                                     
-                            <label class="form-label" for="snippets">Snippet</label>
-                            <input type="file" class="form-control mb-2" name="snippets" id="snippets">
-                            <label class="form-label" for="work_links">Link</label>
-                            <input type="text" class="form-control" name="work_links" id="work_links">
+                            <!-- END MODAL -->   
+                            <h3 class="mt-2 mb-2 text-center dash-info">My Works</h3>
+                            <div class="col-md-12 col-sm-12 mx-auto mt-3 p-3 dash-border">
+                                <label class="form-label" for="work_titles">Title</label>
+                                <input type="text" class="form-control mb-2" name="work_titles" id="work_titles">                        
+                                <label class="form-label" for="work_links">Link</label>
+                                <input type="text" class="form-control mb-2" name="work_links" id="work_links">
+                                <label class="form-label" for="work_snippets">Snippet</label>
+                                <input type="file" class="form-control" name="work_snippets" id="work_snippets">
+                            </div> 
                         </div>
                     </div> 
                     <div class="row">                 
